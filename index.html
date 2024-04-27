@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header {
+            background-color: #252424;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: right;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li:first-child {
+            margin-left: 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f3f72a;
+        }
+
+        #hero {
+            background-image: url('https://images.pexels.com/photos/2341830/pexels-photo-2341830.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center;
+            color: #0f0f0f;
+            padding: 100px 0;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #hero .container {
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left; 
+            padding-left: 20px;
+        }
+
+        .head {
+            color: white;
+            margin-bottom: 20px;
+            width: 50vw;
+            font-size: 60px;
+            font-weight: 100;
+        }
+
+        .head2 {
+            color: rgb(241, 235, 235);
+            margin-bottom: 20px;
+            width: 50vw;
+            font-size: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #5baf07;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            width: 50vw;
+            max-width: 200px;
+        }
+
+        .btn:hover {
+            background-color: #f3f72a;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+        .lg{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            padding: 50px;
+    
+        }
+        .head3{
+            color: white;
+            padding: 10px;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        .uname{
+            color: white;
+            padding: 10px;
+            font-size: 25px;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .ubox{
+            color: rgb(10, 9, 9);
+            padding: 5px;
+            font-size: 20px;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+            background-color: rgb(204, 206, 206);
+        }
+
+        .ulg{
+            color: white;
+            padding: 5px;
+            font-size: 20px;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+            background-color: blue;
+            height: 40px;
+            width: 100px;
+
+        }
+
+        
+        @media screen and (max-width: 768px) {
+            header {
+                padding: 10px 0;
+            }
+            header h1 {
+                font-size: 20px;
+            }
+            nav ul li {
+                margin-left: 10px;
+            }
+            .head {
+                font-size: 40px;
+            }
+            .head2 {
+                font-size: 16px;
+            }
+            .btn {
+                padding: 8px 16px;
+            }
+            .head3 {
+                font-size: 30px;
+            }
+            .uname {
+                font-size: 20px;
+            }
+            .ubox {
+                font-size: 16px;
+            }
+            .ulg {
+                height: 30px;
+                width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Travel</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Tourism">Home</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Tourism">About</a></li>
+                    <li><a href="https://www.worlddata.info/tourism.php">Popular</a></li>
+                    <li><a href="https://www.unwto.org/world-tourism-day-2020">Explore</a></li>
+                </ul>                
+            </nav>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="container">
+            <h2 class="head2">Welcome to Travel</h2>
+            <h1 class="head">Explore<br> the World</h1>
+            <p class="head2">Live the trips exploring the world. Discover paradises,</br> islands, mountains, and much more. Get your trip now.</p>
+            <a href="https://www.unwto.org/" class="btn">Explore Now</a>
+        </div>
+    <div class="lg">
+    
+    <h1 class="head3">Login</h1>
+  <form id="login-form">
+    <label for="username" class="uname">Username:</label>
+    <input type="text" id="username" name="username" placeholder="tourist_places" required class="ubox"><br><br>
+    <label for="password" class="uname">Password:</label>
+    <input type="password" id="password" name="password" placeholder="tourist@123" required class="ubox"><br><br>
+    <button type="submit" class="ulg">Login</button>
+  </form>
+  
+  </div>
+
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      
+      if (username === 'tourist_places' && password === 'tourist@123') {
+        window.location.href = 'main.html';
+      } else {
+        alert('Invalid username or password. Please try again.');
+      }
+    });
+  </script>
+
+    </section>
+
+    
+</body>
+</html>
